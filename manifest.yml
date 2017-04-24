@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: NotifApp
+  host: NotifApp
+  disk_quota: 1024M
+  services:
+  - NotifApp-AdvancedMobileAccess
+  - NotifApp-imfpush
+  - NotifApp-cloudantNoSQLDB
